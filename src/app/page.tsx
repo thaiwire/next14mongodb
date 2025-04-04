@@ -5,7 +5,9 @@ export default function  Home() {
   return (
       <main>
        
-        <AppLogo />
+        <AppLogo title="twp logo" />
+        <hr />
+        <AppLogo title="twp logo1" />
         <h1>Home Page</h1>
       </main>    
   );

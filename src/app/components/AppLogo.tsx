@@ -1,6 +1,10 @@
 "use client";
+type AppLogoProps = {
+    title: string;
+    // add other props here if needed
+}
 
-export default function AppLogo() {
+export default function AppLogo({title} : AppLogoProps) {
   const subTitle = "create by Codingthailand";
   const dateNow = new Date();
   const timeNow =  <p> {dateNow.getHours()} : {dateNow.getMinutes()} </p>;
@@ -13,7 +17,7 @@ export default function AppLogo() {
 
   return (
     <>
-      <p style={{ color: "red" }}>My Logo</p>
+      <p style={{ color: "red" }}>{title}</p>
       <button onClick={onHandleClick} style={{ color: "red" }}>
         Click Me
       </button>
